@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// forget to using PascalCase
 public class getInput {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
