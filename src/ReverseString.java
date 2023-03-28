@@ -2,6 +2,8 @@ public class ReverseString {
     public static void main(String[] args) {
         String reverse = reverseString("It Is Just Me?");
         System.out.println(reverse);
+        String reverseNew = reverseStringNew("ha ha ha");
+        System.out.println(reverseNew);
     }
 
     public static String reverseString(String s) {
@@ -20,6 +22,15 @@ public class ReverseString {
             reverse.append(letter);
         }
 
+        return reverse.toString();
+    }
+
+    public static String reverseStringNew(String s) {
+        char[] letters = s.toCharArray();
+        StringBuilder reverse = new StringBuilder();
+        for (int i = letters.length - 1; i >= 0; i--) {
+            reverse.append(letters[i]);
+        }
         return reverse.toString();
     }
 
