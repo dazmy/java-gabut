@@ -4,6 +4,8 @@ public class ReverseString {
         System.out.println(reverse);
         String reverseNew = reverseStringNew("ha ha ha");
         System.out.println(reverseNew);
+        String reverseSimple = reverseStringSimple("inidnA araiT - hadnI asareM");
+        System.out.println(reverseSimple);
     }
 
     public static String reverseString(String s) {
@@ -32,6 +34,11 @@ public class ReverseString {
             reverse.append(letters[i]);
         }
         return reverse.toString();
+    }
+
+    public static String reverseStringSimple(String s) {
+        StringBuilder reverse = new StringBuilder(s);
+        return reverse.reverse().toString();
     }
 
 }
